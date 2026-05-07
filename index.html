@@ -1,14 +1,28 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VMediaos — Red de Publicidad Exterior</title>
+    <title>VMedios — Agencia de Vía Pública Digital</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <meta name="description" content="Red nacional de pantallas LED en vía pública. Más de 200 posiciones en 26 provincias. Agencia especializada en publicidad exterior digital, tradicional y medios On/OFF." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://vmedios.com.ar/" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="VMedios — Agencia de Vía Pública Digital" />
+    <meta property="og:description" content="Red nacional de pantallas LED en vía pública. Más de 200 posiciones en 26 provincias. Agencia especializada en publicidad exterior digital, tradicional y medios On/OFF." />
+    <meta property="og:image" content="https://vmedios.com.ar/assets/op.png" />
+    <meta property="og:url" content="https://vmedios.com.ar/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VMedios" />
+    <meta property="og:locale" content="es_AR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://vmedios.com.ar/assets/op.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
     <!-- ============================================================
@@ -16,15 +30,17 @@
          ============================================================ -->
     <nav id="nav">
       <a href="#inicio" class="nav-logo">
-        <img src="assets/logo-white.png" alt="VMediaos" class="logo-img" />
+        <img src="assets/logo-white.png" alt="VMedios" class="logo-img" />
       </a>
       <ul class="nav-links">
         <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#formatos">Formatos</a></li>
+        <li><a href="#formatos">Pantallas LED</a></li>
         <li><a href="#cobertura">Cobertura</a></li>
-        <li><a href="#especificaciones">Especificaciones</a></li>
-        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#venta-alquiler">Venta y Alquiler</a></li>
+        <li><a href="#especificaciones">Formatos Alternativos</a></li>
+        <li><a href="#galeria">Clientes</a></li>
         <li><a href="#contacto" class="nav-cta">Consultanos</a></li>
+        <li><a href="#diferencial">Diferenciales</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -32,11 +48,13 @@
     </nav>
     <div class="mobile-menu" id="mobile-menu">
       <a href="#nosotros">Nosotros</a>
-      <a href="#formatos">Formatos</a>
+      <a href="#formatos">Pantallas LED</a>
       <a href="#cobertura">Cobertura</a>
-      <a href="#especificaciones">Especificaciones</a>
-      <a href="#clientes">Clientes</a>
+      <a href="#venta-alquiler">Venta y Alquiler</a>
+      <a href="#especificaciones">Formatos Alternativos</a>
+      <a href="#galeria">Clientes</a>
       <a href="#contacto">Consultanos</a>
+      <a href="#diferencial">Diferenciales</a>
     </div>
 
     <!-- ============================================================
@@ -56,35 +74,33 @@
           disablepictureinpicture
           disableremoteplayback
         >
-          <source src="assets/Comp%201.mp4" type="video/mp4" />
+          <source src="assets/FINAL.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-eyebrow">
-            <span>Agencia de publicidad exterior — Desde 2013</span>
+            <span>Agencia de Vía Pública Digital – desde 2013</span>
           </div>
           <h1 class="hero-title">
-            Red nacional<br />
-            <span class="outline">DE PUBLICIDAD</span><br />
-            <span class="verde">EXTERIOR</span>
+            <img src="assets/green-arrow.svg" class="hero-arrow" alt="" aria-hidden="true" /><span class="outline-white">Red nacional</span><br />
+            <span class="outline">DE PANTALLAS LED</span><br />
+            <span class="verde">EN VíA PúBLICA</span>
           </h1>
           <p class="hero-sub">
-            Red nacional de publicidad exterior: pantallas LED, lunetas
-            digitales, vía pública tradicional y medios offline. Un solo
-            proveedor, cobertura total.
+            Agencia comercial especializada en publicidad a través de pantallas LED, publicidad exterior tradicional y medios On/OFF.
           </p>
           <div class="hero-actions">
             <a href="#contacto" class="btn-primary"> Pedí tu cotización </a>
-            <a href="#formatos" class="btn-outline">Ver formatos</a>
+            <a href="#cobertura" class="btn-outline">Cobertura</a>
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
-              <div class="hero-stat-num">150+</div>
+              <div class="hero-stat-num">200+</div>
               <div class="hero-stat-label">Pantallas LED</div>
             </div>
             <div class="hero-stat">
-              <div class="hero-stat-num">13</div>
+              <div class="hero-stat-num">26</div>
               <div class="hero-stat-label">Provincias</div>
             </div>
             <div class="hero-stat">
@@ -189,7 +205,7 @@
               </svg>
             </button>
             <div class="car-counter">
-              <span id="car-cur">1</span> / <span id="car-total">6</span>
+              <span id="car-cur">1</span> / <span id="car-total">15</span>
             </div>
             <button class="car-btn" id="car-next" aria-label="Siguiente">
               <svg
@@ -207,59 +223,21 @@
         </div>
         <div class="car-viewport" id="car-viewport">
           <div class="car-track" id="car-track">
-            <!-- SLIDE 1 -->
-            <div class="car-slide active">
-              <img src="assets/ejemplo-gal.webp" alt="Pantalla LED CABA" />
-              <div class="car-caption">
-                <span class="cap-text">Pantalla LED · Buenos Aires</span>
-                <span class="cap-tag">Vía Pública Digital</span>
-              </div>
-            </div>
-
-            <!-- SLIDE 2 -->
-            <div class="car-slide">
-              <img src="assets/ejemplo-gal.webp" alt="Luneta Digital" />
-              <div class="car-caption">
-                <span class="cap-text">Luneta Digital · GBA</span>
-                <span class="cap-tag">Transporte</span>
-              </div>
-            </div>
-
-            <!-- SLIDE 3 -->
-            <div class="car-slide">
-              <img src="assets/ejemplo-gal.webp" alt="Medianera Córdoba" />
-              <div class="car-caption">
-                <span class="cap-text">Medianera · Córdoba</span>
-                <span class="cap-tag">Vía Pública Tradicional</span>
-              </div>
-            </div>
-
-            <!-- SLIDE 4 -->
-            <div class="car-slide">
-              <img src="assets/ejemplo-gal.webp" alt="Mupi Digital CABA" />
-              <div class="car-caption">
-                <span class="cap-text">Mupi Digital · CABA</span>
-                <span class="cap-tag">Mobiliario Urbano</span>
-              </div>
-            </div>
-
-            <!-- SLIDE 5 -->
-            <div class="car-slide">
-              <img src="assets/ejemplo-gal.webp" alt="Pantalla LED Shopping" />
-              <div class="car-caption">
-                <span class="cap-text">Pantalla LED · Shopping</span>
-                <span class="cap-tag">Indoor</span>
-              </div>
-            </div>
-
-            <!-- SLIDE 6 -->
-            <div class="car-slide">
-              <img src="assets/ejemplo-gal.webp" alt="Campaña regional Rosario" />
-              <div class="car-caption">
-                <span class="cap-text">Campaña regional · Rosario</span>
-                <span class="cap-tag">Multi-formato</span>
-              </div>
-            </div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-01.png" alt="Galería 01" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-02.png" alt="Galería 02" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-03.png" alt="Galería 03" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-04.png" alt="Galería 04" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-05.png" alt="Galería 05" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-06.png" alt="Galería 06" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-07.png" alt="Galería 07" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-08.png" alt="Galería 08" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-09.png" alt="Galería 09" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-10.png" alt="Galería 10" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-11.png" alt="Galería 11" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-12.png" alt="Galería 12" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-13.png" alt="Galería 13" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-14.png" alt="Galería 14" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
+            <div class="car-slide"><img src="assets/galeria/Galeria-15.png" alt="Galería 15" loading="lazy" /><div class="car-caption"><span class="cap-text">Luneta digital para <strong>Coca-Cola</strong></span></div></div>
           </div>
         </div>
         <div class="car-dots" id="car-dots"></div>
@@ -267,6 +245,68 @@
           <div class="car-progress-bar" id="car-bar"></div>
         </div>
       </div>
+      <div id="clientes" class="clientes-header reveal">
+        <span class="tag">Clientes</span>
+        <h2 class="section-title">
+          Las marcas que <span class="highlight">confían</span> en nosotros
+        </h2>
+        <p>Empresas líderes de todos los rubros ya eligieron la red VMediaos para sus campañas.</p>
+      </div>
+    <div class="logos-ticker-wrap">
+      <div class="logos-ticker-inner">
+        <div class="logos-ticker-item"><img src="assets/logos/adidas.png" alt="Adidas" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/almundo.png" alt="Almundo" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/axion.png" alt="Axion" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/cace-official.png" alt="CACE" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/coca-cola.png" alt="Coca-Cola" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/dermaglos.png" alt="Dermaglos" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/directv.png" alt="DirecTV" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/fv.png" alt="FV" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/idqAR3rC52_logos.png" alt="Cliente" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/liliana.png" alt="Liliana" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/mcdonalds.png" alt="McDonald's" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/medife.png" alt="Medife" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/mercadolibre.png" alt="Mercado Libre" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/movistar.png" alt="Movistar" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/naranja-x.png" alt="Naranja X" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/netflix.png" alt="Netflix" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/nubia.png" alt="Nubia" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/on-city.png" alt="On City" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/pedidosya.png" alt="PedidosYa" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/personal.png" alt="Personal" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/quini6.png" alt="Quini 6" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/remax.png" alt="RE/MAX" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/vulcanita.png" alt="Vulcanita" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/ypf.png" alt="YPF" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/zurich-seguros.png" alt="Zurich Seguros" /></div>
+        <!-- duplicado para loop infinito -->
+        <div class="logos-ticker-item"><img src="assets/logos/adidas.png" alt="Adidas" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/almundo.png" alt="Almundo" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/axion.png" alt="Axion" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/cace-official.png" alt="CACE" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/coca-cola.png" alt="Coca-Cola" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/dermaglos.png" alt="Dermaglos" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/directv.png" alt="DirecTV" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/fv.png" alt="FV" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/idqAR3rC52_logos.png" alt="Cliente" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/liliana.png" alt="Liliana" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/mcdonalds.png" alt="McDonald's" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/medife.png" alt="Medife" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/mercadolibre.png" alt="Mercado Libre" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/movistar.png" alt="Movistar" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/naranja-x.png" alt="Naranja X" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/netflix.png" alt="Netflix" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/nubia.png" alt="Nubia" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/on-city.png" alt="On City" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/pedidosya.png" alt="PedidosYa" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/personal.png" alt="Personal" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/quini6.png" alt="Quini 6" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/remax.png" alt="RE/MAX" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/vulcanita.png" alt="Vulcanita" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/ypf.png" alt="YPF" /></div>
+        <div class="logos-ticker-item"><img src="assets/logos/zurich-seguros.png" alt="Zurich Seguros" /></div>
+      </div>
+    </div>
     </section>
 
     <!-- ============================================================
@@ -277,21 +317,7 @@
         <div class="nosotros-grid">
           <div class="nosotros-img reveal-left">
             <div class="nosotros-img-box">
-              <!-- REEMPLAZAR: foto del equipo o de una pantalla icónica -->
-              <div class="nosotros-img-placeholder">
-                <svg
-                  width="40"
-                  height="40"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.2"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="12" cy="8" r="4" />
-                  <path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" />
-                </svg>
-                FOTO EQUIPO / IMAGEN INSTITUCIONAL
-              </div>
+              <img src="assets/Equipo.png" alt="Equipo VMedios" style="width:100%;height:100%;object-fit:cover;display:block;" />
             </div>
             <div class="nosotros-badge">
               <div class="nosotros-badge-num">2013</div>
@@ -299,23 +325,17 @@
             </div>
           </div>
           <div class="nosotros-content reveal-right">
-            <span class="tag">Quiénes somos</span>
+            <span class="tag">Nosotros</span>
             <h2 class="section-title">
-              Más que una agencia,<br /><span class="highlight"
+              Más que una empresa,<br /><span class="highlight"
                 >un compromiso</span
               >
             </h2>
             <p class="nosotros-desc" style="margin-top: 20px">
-              Somos una agencia comercial especializada en publicidad a través
-              de pantallas LED, publicidad exterior tradicional y medios On/OFF.
-              Fundada en 2013 por dos profesionales con amplia experiencia,
-              construimos una red de espacios que abarca las más diversas
-              estrategias de comunicación.
+             Una agencia comercial especializada en publicidad a través de pantallas LED, publicidad exterior tradicional y medios On/OFF, que fue fundada en 2013 por dos profesionales con amplia experiencia que decidieron trabajar de manera efectiva. Más que un simple trabajo, se trata de un compromiso. Establecemos acuerdos comerciales para construir una cartera de espacios que abarquen diversas estrategias de comunicación. Nos apasionan los medios y tomamos muy en serio nuestro compromiso con los clientes..
             </p>
             <p class="nosotros-desc">
-              Agrupamos propietarios de pantallas independientes para ofrecerle
-              a las marcas el circuito digital más eficiente del mercado. Sin
-              intermediarios innecesarios, con compromiso real.
+              Para nosotros, es fundamental estar al día con los procesos y cambios, proporcionando espacios y recursos que sean capaces de generar resultados positivos.
             </p>
             <div class="nosotros-valores">
               <div class="valor-item">
@@ -328,21 +348,19 @@
               <div class="valor-item">
                 <div class="valor-title">Mix integral</div>
                 <div class="valor-text">
-                  El único proveedor que combina digital, tradicional y medios
-                  offline.
+                  Combinamos medios digitales, tradicionales y BTL
                 </div>
               </div>
               <div class="valor-item">
                 <div class="valor-title">Gestión directa</div>
                 <div class="valor-text">
-                  Atención personalizada de Adrian y Leonardo, los fundadores.
+                  Atención personalizada por profesionales
                 </div>
               </div>
               <div class="valor-item">
-                <div class="valor-title">Actualización continua</div>
+                <div class="valor-title">Flexibilización</div>
                 <div class="valor-text">
-                  Siempre al día con tecnología, formatos y tendencias del
-                  mercado.
+                   Escuchamos la necesidad del cliente para adaptar el producto a su necesidad o encontrando la solución de la misma.
                 </div>
               </div>
             </div>
@@ -358,287 +376,24 @@
       <div class="container">
         <div class="formatos-intro">
           <div class="reveal-left">
-            <span class="tag">Nuestros formatos</span>
+            <span class="tag">Pantallas LED</span>
             <h2 class="section-title">
-              La red más<br /><span class="highlight">completa</span><br />del
-              mercado
+              Comunidad <br /><span class="highlight">LED</span>
             </h2>
-          </div>
-          <div class="reveal-right">
             <p class="formatos-desc">
-              Mientras la competencia se especializa en un solo tipo de soporte,
-              VMediaos ofrece una compra de medios 360°: desde pantallas
-              digitales hasta lunetas de colectivos, cines, radios y televisión.
-              Una sola negociación, múltiples puntos de contacto con tu
-              audiencia.
+              Contamos con un circuito estable de PANTALLAS LED con más de 150 posiciones en vía pública, ubicadas principalmente en los centros de cada municipio y de cada capital en todo el país, teniendo <span class="highlight">la mejor cobertura digital del mercado.</span>
             </p>
           </div>
-        </div>
-        <div class="formatos-grid reveal">
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto pantalla LED exterior -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-              FOTO — Pantalla LED
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <rect x="2" y="3" width="20" height="14" rx="2" />
-                <path d="M8 21h8M12 17v4" />
-              </svg>
-            </div>
-            <div class="formato-name">Pantallas LED</div>
-            <div class="formato-desc">
-              Más de 150 posiciones en vía pública: estaciones de tren,
-              shoppings, centros comerciales y calles peatonales. Alta
-              visibilidad 24/7.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec">▸ 150+ posiciones nacionales</span>
-              <span class="formato-spec">▸ Carga remota instantánea</span>
-              <span class="formato-spec"
-                >▸ Segmentación por zona y horario</span
-              >
-            </div>
-          </div>
-
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto luneta digital en colectivo -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <rect x="1" y="6" width="22" height="12" rx="2" />
-                <circle cx="5" cy="18" r="2" />
-                <circle cx="19" cy="18" r="2" />
-              </svg>
-              FOTO — Luneta Digital
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <rect x="1" y="6" width="22" height="12" rx="2" />
-                <circle cx="5" cy="18" r="2" />
-                <circle cx="19" cy="18" r="2" />
-              </svg>
-            </div>
-            <div class="formato-name">Lunetas Digitales</div>
-            <div class="formato-desc">
-              Pantallas P3 HD en la luneta trasera de colectivos. Recorren ~300
-              km diarios impactando peatones y conductores en las líneas más
-              transitadas.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec"
-                >▸ Líneas 61 · 62 · 114 · 143 · 145</span
-              >
-              <span class="formato-spec">▸ 1560 x 468 px · P3 HD</span>
-              <span class="formato-spec">▸ 15/20 seg · MP4 sin audio</span>
-            </div>
-          </div>
-
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto luneta tradicional en colectivo -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <path
-                  d="M4 17H2v-1a2 2 0 012-2h14a2 2 0 012 2v1h-2M4 17h14M4 17v2a1 1 0 001 1h1a1 1 0 001-1v-2M14 17v2a1 1 0 001 1h1a1 1 0 001-1v-2"
-                />
-                <path d="M18 5H6L4 14h16L18 5z" />
-              </svg>
-              FOTO — Luneta Tradicional
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M4 17H2v-1a2 2 0 012-2h14a2 2 0 012 2v1h-2M4 17h14M4 17v2a1 1 0 001 1h1a1 1 0 001-1v-2M14 17v2a1 1 0 001 1h1a1 1 0 001-1v-2"
-                />
-                <path d="M18 5H6L4 14h16L18 5z" />
-              </svg>
-            </div>
-            <div class="formato-name">Lunetas Tradicionales</div>
-            <div class="formato-desc">
-              Vinilo en la luneta trasera de buses. Difícil de vandalizar,
-              impacto masivo en recorridos de alta circulación. Segmentación por
-              zona de recorrido.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec">▸ CABA · GBA · Mar del Plata</span>
-              <span class="formato-spec">▸ Córdoba · Mendoza · Rosario</span>
-              <span class="formato-spec">▸ Chaco · Santa Fe</span>
-            </div>
-          </div>
-
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto mupi digital en calle -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <rect x="6" y="2" width="12" height="18" rx="2" />
-                <path d="M12 20v2" />
-              </svg>
-              FOTO — Mupi Digital
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <rect x="6" y="2" width="12" height="18" rx="2" />
-                <path d="M12 20v2" />
-              </svg>
-            </div>
-            <div class="formato-name">Mupis Digitales</div>
-            <div class="formato-desc">
-              Pantallas verticales a pie de calle, cobertura en CABA. Ideales
-              para publicidad de proximidad en zonas de alta densidad peatonal.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec">▸ CABA · 163 x 96,1 cm</span>
-              <span class="formato-spec">▸ 320×512 px / 320×640 px</span>
-              <span class="formato-spec">▸ JPG o MP4</span>
-            </div>
-          </div>
-
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto columna o medianera tradicional -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <rect x="3" y="3" width="18" height="13" rx="2" />
-                <path d="M3 8h18" />
-              </svg>
-              FOTO — Vía Pública Tradicional
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <rect x="3" y="3" width="18" height="13" rx="2" />
-                <path d="M3 8h18M8 21l4-5 4 5" />
-              </svg>
-            </div>
-            <div class="formato-name">Vía Pública Tradicional</div>
-            <div class="formato-desc">
-              Columnas, medianeras y espectaculares en alianza con socios
-              estratégicos en todo el país. Formatos de gran impacto para
-              campañas de alta visibilidad.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec">▸ Columnas · Medianeras</span>
-              <span class="formato-spec">▸ CABA · GBA · Interior</span>
-              <span class="formato-spec">▸ Rosario · Córdoba · Mendoza</span>
-            </div>
-          </div>
-
-          <div class="formato-card">
-            <div class="formato-img-area">
-              <!-- REEMPLAZAR: foto cine o estación de tren con publicidad -->
-              <svg
-                width="28"
-                height="28"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                style="color: var(--gris)"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polygon points="10 8 16 12 10 16 10 8" />
-              </svg>
-              FOTO — Otros Medios
-            </div>
-            <div class="formato-icon">
-              <svg
-                width="48"
-                height="48"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <polygon points="10 8 16 12 10 16 10 8" />
-              </svg>
-            </div>
-            <div class="formato-name">Otros Medios</div>
-            <div class="formato-desc">
-              Mix de medios no convencionales para situar tu mensaje donde está
-              tu audiencia: PNT en TV y radio, publicidad en cines, shoppings y
-              estaciones de tren.
-            </div>
-            <div class="formato-specs">
-              <span class="formato-spec">▸ PNT en TV y Radio</span>
-              <span class="formato-spec">▸ Cines · Shoppings</span>
-              <span class="formato-spec">▸ Estaciones de Tren</span>
+          <div class="reveal-right">
+            <h3 class="formatos-subtitle">
+              Nuestra <span class="highlight">Presencia</span>
+            </h3>
+            <p class="formatos-desc">
+              Agrupamos personas que tienen elementos digitales independientes para poder darles a las marcas las mejores opciones para un circuito digital en todo el país.
+            </p>
+            <div class="valor-item" style="margin-top: 24px;">
+              <div class="valor-title">Presencia regional</div>
+              <div class="valor-text">Tenemos acuerdos en Uruguay, Paraguay y Perú.</div>
             </div>
           </div>
         </div>
@@ -654,8 +409,8 @@
           <div class="reveal-left">
             <span class="tag">Cobertura</span>
             <h2 class="section-title">
-              Presente en<br />todo el <span class="highlight">país</span
-              ><br />y la región
+              Presente en <br />todo el <span class="highlight">país</span
+              ><br /> y la región
             </h2>
             <div class="cobertura-list">
               <div class="cob-region open">
@@ -706,7 +461,7 @@
                   <span class="cob-arrow">▼</span>
                 </div>
                 <div class="cob-region-body">
-                  <div class="cob-cities">Uruguay · Paraguay</div>
+                  <div class="cob-cities">Uruguay · Paraguay · Perú</div>
                 </div>
               </div>
             </div>
@@ -728,13 +483,13 @@
               </div>
               <div class="int-text">
                 <strong>Presencia internacional:</strong> acuerdos operativos en
-                Uruguay y Paraguay para campañas regionales.
+                Uruguay, Paraguay y Perú para campañas regionales.
               </div>
             </div>
           </div>
           <div class="cobertura-map reveal-right">
             <iframe
-              src="https://www.google.com/maps/d/u/0/embed?mid=1XMdoqzmjMLx_y2jURroh4YyPkObearQ&ehbc=2E312F"
+              src="https://www.google.com/maps/d/embed?mid=1PcGEllRV9WMkJ-GMU03z9Pcjfrx_iVU&ehbc=2E312F"
               width="100%"
               height="100%"
               style="border:0; display:block;"
@@ -747,348 +502,238 @@
     </section>
 
     <!-- ============================================================
+         VENTA Y ALQUILER — Nueva sección
+         ============================================================ -->
+    <section id="venta-alquiler">
+      <div class="container">
+        <div class="venta-alquiler-header reveal">
+          <span class="tag">Soluciones integrales</span>
+          <h2 class="section-title">
+            Venta y <span class="highlight">Alquiler</span>
+          </h2>
+        </div>
+        <div class="va-grid reveal">
+          <div class="va-card">
+            <div class="va-icon"><i data-lucide="monitor"></i></div>
+            <div class="va-title">Alquiler de Pantallas LED</div>
+            <div class="va-desc">para eventos tanto en exterior como en interior.</div>
+          </div>
+          <div class="va-card">
+            <div class="va-icon"><i data-lucide="badge-check"></i></div>
+            <div class="va-title">Venta de pantallas led </div>
+            <div class="va-desc">opción llave en mano, con estructura, colocación, sistema de comunicación y wifi. Lista para usar.</div>
+            <div class="va-checks">
+              <span class="va-check">✓ Las pantallas pueden transformar tu espacio y mejorar la comunicación.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          ESPECIFICACIONES — Tabs con specs técnicas por formato
          ============================================================ -->
     <section id="especificaciones">
       <div class="container">
         <div class="specs-intro reveal">
-          <span class="tag">Especificaciones técnicas</span>
+          <span class="tag">Formatos Alternativos</span>
           <h2 class="section-title">
-            Estándares de <span class="highlight">entrega</span>
+            Otros <span class="highlight">medios</span>
           </h2>
+          <p class="formatos-desc">Para aquellos clientes que no tienen agencia de medios, les ofrecemos la posibilidad de armarles un plan de medios a medida. Una sola negociación, múltiples puntos de contacto con tu audiencia. Te asesoramos en la mejor planificación y compra de medios para la implementación de campañas en publicidad Out Of Home.</p>
         </div>
         <div class="specs-tabs reveal">
-          <div class="spec-tab active" onclick="switchTab(this, 'tab-led')">
-            Pantallas LED
-          </div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-d')">
-            Luneta Digital
-          </div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-mupi')">
-            Mupi Digital
-          </div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-t')">
-            Luneta Tradicional
+          <div class="spec-tab active" onclick="switchTab(this, 'tab-medianeras')">Medianeras</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-carteles')">Carteles Gran Formato</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-columnas')">Columnas</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-ruteros')">Ruteros</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-tra')">Luneta Tradicional</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-esc')">Lunetas Escolares</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-di')">Lunetas Digitales</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-truck')">Truck Publicitario</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-mupi')">Mupis Digitales</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-ppl-back')">PPL Back</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-cine')">Cine</div>
+          <div class="spec-tab" onclick="switchTab(this, 'tab-pnt-tv')">PNT en Radios y TV</div>
+        </div>
+
+        <div id="tab-medianeras" class="spec-panel active reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/medianera.png" alt="Medianeras" /></div>
+            <table class="spec-table">
+              <tr><td>Tipo de soporte</td><td>—</td></tr>
+              <tr><td>Dimensiones estándar</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Formato de entrega</td><td>—</td></tr>
+              <tr><td>Tiempo de instalación</td><td>—</td></tr>
+              <tr><td>Cobertura disponible</td><td>—</td></tr>
+              <tr><td>Iluminación</td><td>—</td></tr>
+              <tr><td>Durabilidad</td><td>—</td></tr>
+            </table>
           </div>
         </div>
-        <div id="tab-led" class="spec-panel active reveal">
-          <table class="spec-table">
-            <tr>
-              <td>Formato de archivo</td>
-              <td>
-                <span class="spec-badge">MP4</span
-                ><span class="spec-badge">AVI</span
-                ><span class="spec-badge">MOV</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Resolución mínima</td>
-              <td>Consultar según pantalla (varía por ubicación)</td>
-            </tr>
-            <tr>
-              <td>Duración del spot</td>
-              <td>10 / 15 / 20 segundos</td>
-            </tr>
-            <tr>
-              <td>Peso máximo</td>
-              <td>50 MB por pieza</td>
-            </tr>
-            <tr>
-              <td>Audio</td>
-              <td>Sin audio (silencioso)</td>
-            </tr>
-            <tr>
-              <td>Espacio de color</td>
-              <td>sRGB</td>
-            </tr>
-            <tr>
-              <td>Frecuencia de impactos</td>
-              <td>Configurable — segmentación por hora y zona</td>
-            </tr>
-            <tr>
-              <td>Tiempo de activación</td>
-              <td>24 hs hábiles tras aprobación</td>
-            </tr>
-          </table>
+
+        <div id="tab-carteles" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/cartelesGranFormato.png" alt="Carteles Gran Formato" /></div>
+            <table class="spec-table">
+              <tr><td>Tipo de soporte</td><td>—</td></tr>
+              <tr><td>Dimensiones estándar</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Formato de entrega</td><td>—</td></tr>
+              <tr><td>Tiempo de instalación</td><td>—</td></tr>
+              <tr><td>Cobertura disponible</td><td>—</td></tr>
+              <tr><td>Iluminación</td><td>—</td></tr>
+              <tr><td>Material</td><td>—</td></tr>
+            </table>
+          </div>
         </div>
-        <div id="tab-luneta-d" class="spec-panel reveal">
-          <table class="spec-table">
-            <tr>
-              <td>Formato de archivo</td>
-              <td><span class="spec-badge">MP4</span> Sin audio</td>
-            </tr>
-            <tr>
-              <td>Resolución</td>
-              <td>1560 × 468 px</td>
-            </tr>
-            <tr>
-              <td>Calidad de pantalla</td>
-              <td>P3 HD</td>
-            </tr>
-            <tr>
-              <td>Duración del spot</td>
-              <td>15 / 20 segundos</td>
-            </tr>
-            <tr>
-              <td>Peso máximo</td>
-              <td>20 MB</td>
-            </tr>
-            <tr>
-              <td>Líneas disponibles</td>
-              <td>61 · 62 · 114 · 143 · 145</td>
-            </tr>
-            <tr>
-              <td>Alcance diario</td>
-              <td>~300 km por unidad</td>
-            </tr>
-            <tr>
-              <td>Programación</td>
-              <td>Remota · Segmentación por zona y horario</td>
-            </tr>
-          </table>
+
+        <div id="tab-columnas" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/columnas.png" alt="Columnas" /></div>
+            <table class="spec-table">
+              <tr><td>Altura estándar</td><td>—</td></tr>
+              <tr><td>Caras disponibles</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Formato de entrega</td><td>—</td></tr>
+              <tr><td>Tiempo de instalación</td><td>—</td></tr>
+              <tr><td>Cobertura disponible</td><td>—</td></tr>
+              <tr><td>Iluminación</td><td>—</td></tr>
+              <tr><td>Material</td><td>—</td></tr>
+            </table>
+          </div>
         </div>
+
+        <div id="tab-ruteros" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/ruteros.png" alt="Ruteros" /></div>
+            <table class="spec-table">
+              <tr><td>Formato de archivo</td><td><span class="spec-badge">MP4</span><span class="spec-badge">AVI</span><span class="spec-badge">MOV</span></td></tr>
+              <tr><td>Resolución mínima</td><td>Consultar según pantalla (varía por ubicación)</td></tr>
+              <tr><td>Duración del spot</td><td>10 / 15 / 20 segundos</td></tr>
+              <tr><td>Peso máximo</td><td>50 MB por pieza</td></tr>
+              <tr><td>Audio</td><td>Sin audio (silencioso)</td></tr>
+              <tr><td>Espacio de color</td><td>sRGB</td></tr>
+              <tr><td>Frecuencia de impactos</td><td>Configurable — segmentación por hora y zona</td></tr>
+              <tr><td>Tiempo de activación</td><td>24 hs hábiles tras aprobación</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="tab-luneta-tra" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/luneta-tradicional.png" alt="Luneta Tradicional" /></div>
+            <table class="spec-table">
+              <tr><td>Soporte</td><td>Vinilo autoadhesivo calidad exterior</td></tr>
+              <tr><td>Formato de entrega</td><td>PDF / AI / PSD — alta resolución</td></tr>
+              <tr><td>Resolución mínima</td><td>150 dpi a tamaño real</td></tr>
+              <tr><td>Cobertura</td><td>CABA · GBA · Mar del Plata · Rosario · Córdoba · Mendoza · Chaco · Santa Fe</td></tr>
+              <tr><td>Alcance</td><td>~300 km diarios por unidad</td></tr>
+              <tr><td>Segmentación</td><td>Por zona de recorrido</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="tab-luneta-esc" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/luneta-escolar.png" alt="Lunetas Escolares" /></div>
+            <table class="spec-table">
+              <tr><td>Soporte</td><td>—</td></tr>
+              <tr><td>Formato de entrega</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Cobertura</td><td>—</td></tr>
+              <tr><td>Alcance</td><td>—</td></tr>
+              <tr><td>Segmentación</td><td>—</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="tab-luneta-di" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/luneta-led.png" alt="Lunetas Digitales" /></div>
+            <table class="spec-table">
+              <tr><td>Formato de archivo</td><td><span class="spec-badge">MP4</span> Sin audio</td></tr>
+              <tr><td>Resolución</td><td>1560 × 468 px</td></tr>
+              <tr><td>Calidad de pantalla</td><td>P3 HD</td></tr>
+              <tr><td>Duración del spot</td><td>15 / 20 segundos</td></tr>
+              <tr><td>Peso máximo</td><td>20 MB</td></tr>
+              <tr><td>Líneas disponibles</td><td>61 · 62 · 114 · 143 · 145</td></tr>
+              <tr><td>Alcance diario</td><td>~300 km por unidad</td></tr>
+              <tr><td>Programación</td><td>Remota · Segmentación por zona y horario</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div id="tab-truck" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/truck-publicitario.png" alt="Truck Publicitario" /></div>
+            <table class="spec-table">
+              <tr><td>Tipo</td><td>—</td></tr>
+              <tr><td>Formato de archivo</td><td>—</td></tr>
+              <tr><td>Resolución</td><td>—</td></tr>
+              <tr><td>Cobertura</td><td>—</td></tr>
+              <tr><td>Disponibilidad</td><td>—</td></tr>
+            </table>
+          </div>
+        </div>
+
         <div id="tab-mupi" class="spec-panel reveal">
-          <table class="spec-table">
-            <tr>
-              <td>Formato de archivo</td>
-              <td>
-                <span class="spec-badge">JPG</span
-                ><span class="spec-badge">MP4</span>
-              </td>
-            </tr>
-            <tr>
-              <td>Resolución opción A</td>
-              <td>320 × 512 px</td>
-            </tr>
-            <tr>
-              <td>Resolución opción B</td>
-              <td>320 × 640 px</td>
-            </tr>
-            <tr>
-              <td>Dimensión física</td>
-              <td>163 × 96,1 cm</td>
-            </tr>
-            <tr>
-              <td>Cobertura</td>
-              <td>CABA</td>
-            </tr>
-            <tr>
-              <td>Orientación</td>
-              <td>Vertical (portrait)</td>
-            </tr>
-          </table>
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/mupis-digitales.png" alt="Mupis Digitales" /></div>
+            <table class="spec-table">
+              <tr><td>Formato de archivo</td><td><span class="spec-badge">JPG</span><span class="spec-badge">MP4</span></td></tr>
+              <tr><td>Resolución opción A</td><td>320 × 512 px</td></tr>
+              <tr><td>Resolución opción B</td><td>320 × 640 px</td></tr>
+              <tr><td>Dimensión física</td><td>163 × 96,1 cm</td></tr>
+              <tr><td>Cobertura</td><td>CABA</td></tr>
+              <tr><td>Orientación</td><td>Vertical (portrait)</td></tr>
+            </table>
+          </div>
         </div>
-        <div id="tab-luneta-t" class="spec-panel reveal">
-          <table class="spec-table">
-            <tr>
-              <td>Soporte</td>
-              <td>Vinilo autoadhesivo calidad exterior</td>
-            </tr>
-            <tr>
-              <td>Formato de entrega</td>
-              <td>Archivo vectorial o alta resolución (PDF / AI / PSD)</td>
-            </tr>
-            <tr>
-              <td>Resolución mínima</td>
-              <td>150 dpi a tamaño real</td>
-            </tr>
-            <tr>
-              <td>Cobertura</td>
-              <td>
-                CABA · GBA · Mar del Plata · Rosario · Córdoba · Mendoza · Chaco
-                · Santa Fe
-              </td>
-            </tr>
-            <tr>
-              <td>Alcance</td>
-              <td>~300 km diarios por unidad</td>
-            </tr>
-            <tr>
-              <td>Segmentación</td>
-              <td>Por zona de recorrido</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </section>
 
-    <!-- ============================================================
-         CLIENTES — Grid de logos de clientes
-         ============================================================ -->
-    <section id="clientes">
-      <div class="container">
-        <div class="clientes-header reveal">
-          <span class="tag">Clientes</span>
-          <h2 class="section-title">
-            Las marcas que <span class="highlight">confían</span> en nosotros
-          </h2>
-          <p>
-            Empresas líderes de todos los rubros ya eligieron la red VMediaos
-            para sus campañas.
-          </p>
-        </div>
-        <div class="clientes-grid reveal">
-          <!-- REEMPLAZAR: <img src="logos/cliente.svg" alt="Nombre"> dentro de cada .cliente-logo -->
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
-          </div>
-          <div class="cliente-logo">
-            <div class="cliente-placeholder"></div>
+        <div id="tab-ppl-back" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/ppl-black.png" alt="PPL Back" /></div>
+            <table class="spec-table">
+              <tr><td>Tipo de soporte</td><td>—</td></tr>
+              <tr><td>Formato de entrega</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Cobertura</td><td>—</td></tr>
+              <tr><td>Alcance</td><td>—</td></tr>
+            </table>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ============================================================
-         DIFERENCIAL — Por qué VMediaos, 4 puntos + CTA y media kit
-         ============================================================ -->
-    <section id="diferencial">
-      <div class="container">
-        <div class="dif-grid">
-          <div class="reveal-left">
-            <span class="tag">Nuestros diferenciales</span>
-            <h2 class="section-title" style="margin-bottom: 40px">
-              Por qué<br /><span class="highlight">VMedios</span>
-            </h2>
-            <div class="dif-list">
-              <div class="dif-item">
-                <div class="dif-num">01</div>
-                <div class="dif-body">
-                  <div class="dif-title">Un solo proveedor, todo el mix</div>
-                  <div class="dif-text">
-                    El único en Argentina que combina pantallas LED, lunetas
-                    digitales y tradicionales, mupis, PNT en TV/radio, cines y
-                    shoppings bajo una misma negociación.
-                  </div>
-                </div>
-              </div>
-              <div class="dif-item">
-                <div class="dif-num">02</div>
-                <div class="dif-body">
-                  <div class="dif-title">
-                    Red de propietarios independientes
-                  </div>
-                  <div class="dif-text">
-                    Al agrupar propietarios independientes, ofrecemos precios
-                    más competitivos y acceso a ubicaciones únicas que los
-                    grandes circuitos no tienen.
-                  </div>
-                </div>
-              </div>
-              <div class="dif-item">
-                <div class="dif-num">03</div>
-                <div class="dif-body">
-                  <div class="dif-title">Segmentación real</div>
-                  <div class="dif-text">
-                    Programación remota por zona geográfica, día y horario. Tu
-                    mensaje llega a la audiencia correcta en el momento preciso.
-                  </div>
-                </div>
-              </div>
-              <div class="dif-item">
-                <div class="dif-num">04</div>
-                <div class="dif-body">
-                  <div class="dif-title">
-                    Atención directa con los fundadores
-                  </div>
-                  <div class="dif-text">
-                    Sin call centers ni account managers genéricos. Hablás con
-                    Adrian o Leonardo, quienes conocen cada pantalla de la red.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="reveal-right">
-            <div class="dif-cta-box">
-              <div class="dif-cta-title">
-                ¿Listo para<br />tu próxima<br /><span
-                  style="color: var(--verde)"
-                  >campaña?</span
-                >
-              </div>
-              <p class="dif-cta-text">
-                Contanos tu objetivo, presupuesto y zona de interés. En menos de
-                24 hs tenés una propuesta a medida con el mejor circuito para tu
-                marca.
-              </p>
-              <a
-                href="#contacto"
-                class="btn-primary"
-                style="align-self: flex-start"
-                >Solicitar propuesta</a
-              >
-              <a
-                class="mediakit-download"
-                href="assets/VMEDIOS MEDIAKIT 2026.pdf"
-                download
-                target="_blank"
-              >
-                <div class="mk-icon">
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
-                    />
-                    <polyline points="14 2 14 8 20 8" />
-                    <line x1="16" y1="13" x2="8" y2="13" />
-                    <line x1="16" y1="17" x2="8" y2="17" />
-                    <polyline points="10 9 9 9 8 9" />
-                  </svg>
-                </div>
-                <div class="mk-info">
-                  <div class="mk-title">Descargar Media Kit 2026</div>
-                  <div class="mk-sub">PDF · Todos los formatos y tarifas</div>
-                </div>
-              </a>
-            </div>
+        <div id="tab-cine" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/cine.png" alt="Cine" /></div>
+            <table class="spec-table">
+              <tr><td>Formato de archivo</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Duración del spot</td><td>—</td></tr>
+              <tr><td>Circuito disponible</td><td>—</td></tr>
+              <tr><td>Tiempo de activación</td><td>—</td></tr>
+            </table>
           </div>
         </div>
+
+        <div id="tab-pnt-tv" class="spec-panel reveal">
+          <div class="spec-panel-inner">
+            <div class="spec-img"><img src="assets/otros-medios/pnt-radio-tv.png" alt="PNT en Radios y TV" /></div>
+            <table class="spec-table">
+              <tr><td>Formato de archivo</td><td>—</td></tr>
+              <tr><td>Duración del spot</td><td>—</td></tr>
+              <tr><td>Canales disponibles</td><td>—</td></tr>
+              <tr><td>Horarios disponibles</td><td>—</td></tr>
+              <tr><td>Peso máximo</td><td>—</td></tr>
+              <tr><td>Resolución mínima</td><td>—</td></tr>
+              <tr><td>Tiempo de activación</td><td>—</td></tr>
+              <tr><td>Segmentación</td><td>—</td></tr>
+            </table>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1101,7 +746,7 @@
           <div class="reveal-left">
             <span class="tag">Contacto</span>
             <h2 class="section-title">
-              Hablemos<br />de tu <span class="highlight">campaña</span>
+              Hablemos <br />de tu <span class="highlight">campaña</span>
             </h2>
             <p class="contacto-intro">
               Somos una agencia chica con respuesta grande. Escribinos o
@@ -1109,18 +754,7 @@
             </p>
             <div class="contacto-dato">
               <div class="dato-icon">
-                <svg
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 7.18 19.79 19.79 0 01.01 8.5 2 2 0 012 6.35l3-2.81a2 2 0 012.09-.45l3.38 1.5a2 2 0 01.93 2.7L10 9.5a16 16 0 006.5 6.5l1.5-1.38a2 2 0 012.7.93l1.5 3.38a2 2 0 01-.45 2.09z"
-                  />
-                </svg>
+                <i data-lucide="contact-round"></i>
               </div>
               <div>
                 <div class="dato-label">Adrián Smiriglia</div>
@@ -1134,18 +768,7 @@
             </div>
             <div class="contacto-dato">
               <div class="dato-icon">
-                <svg
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 7.18 19.79 19.79 0 01.01 8.5 2 2 0 012 6.35l3-2.81a2 2 0 012.09-.45l3.38 1.5a2 2 0 01.93 2.7L10 9.5a16 16 0 006.5 6.5l1.5-1.38a2 2 0 012.7.93l1.5 3.38a2 2 0 01-.45 2.09z"
-                  />
-                </svg>
+                <i data-lucide="contact-round"></i>
               </div>
               <div>
                 <div class="dato-label">Leonardo Barreiro</div>
@@ -1157,14 +780,7 @@
             </div>
             <div class="contacto-dato">
               <div class="dato-icon">
-                <svg
-                  width="18"
-                  height="18"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  viewBox="0 0 24 24"
-                >
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
@@ -1177,9 +793,48 @@
                 </div>
               </div>
             </div>
+            <div class="contacto-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dato-label">LinkedIn</div>
+                <div class="dato-value">
+                  <a href="https://www.linkedin.com/company/1809813/" target="_blank" rel="noopener">VMedios</a>
+                </div>
+              </div>
+            </div>
+            <div class="contacto-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dato-label">Facebook</div>
+                <div class="dato-value">
+                  <a href="https://www.facebook.com/vmedios" target="_blank" rel="noopener">vmedios</a>
+                </div>
+              </div>
+            </div>
+            <div class="contacto-dato">
+              <div class="dato-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="dato-label">YouTube</div>
+                <div class="dato-value">
+                  <a href="https://www.youtube.com/@vmedioscomercializacionenp1173" target="_blank" rel="noopener">VMedios</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="reveal-right">
-            <div class="contacto-form">
+            <div class="contacto-form" id="formulario">
               <div class="form-title">Solicitar propuesta</div>
               <form id="contact-form" onsubmit="handleSubmit(event)">
                 <div class="form-row">
@@ -1250,6 +905,120 @@
     </section>
 
     <!-- ============================================================
+         DIFERENCIAL — Por qué VMediaos, 4 puntos + CTA y media kit
+         ============================================================ -->
+    <section id="diferencial">
+      <div class="container">
+        <div class="dif-grid">
+          <div class="reveal-left">
+            <span class="tag">Nuestros diferenciales</span>
+            <h2 class="section-title" style="margin-bottom: 40px">
+              Por qué <br /><span class="highlight">VMedios</span>
+            </h2>
+            <div class="dif-list">
+              <div class="dif-item">
+                <div class="dif-num">01</div>
+                <div class="dif-body">
+                  <div class="dif-title">Un solo proveedor, todo el mix</div>
+                  <div class="dif-text">
+                    El único en Argentina que combina pantallas LED, lunetas
+                    digitales y tradicionales, mupis, PNT en TV/radio, cines y
+                    shoppings bajo una misma negociación.
+                  </div>
+                </div>
+              </div>
+              <div class="dif-item">
+                <div class="dif-num">02</div>
+                <div class="dif-body">
+                  <div class="dif-title">
+                    Red de propietarios independientes
+                  </div>
+                  <div class="dif-text">
+                    Al agrupar propietarios independientes, ofrecemos precios
+                    más competitivos y acceso a ubicaciones únicas que los
+                    grandes circuitos no tienen.
+                  </div>
+                </div>
+              </div>
+              <div class="dif-item">
+                <div class="dif-num">03</div>
+                <div class="dif-body">
+                  <div class="dif-title">Segmentación real</div>
+                  <div class="dif-text">
+                    Programación remota por zona geográfica, día y horario. Tu
+                    mensaje llega a la audiencia correcta en el momento preciso.
+                  </div>
+                </div>
+              </div>
+              <div class="dif-item">
+                <div class="dif-num">04</div>
+                <div class="dif-body">
+                  <div class="dif-title">
+                    Atención directa con los fundadores
+                  </div>
+                  <div class="dif-text">
+                    Sin call centers ni account managers genéricos. Hablás con
+                    Adrian o Leonardo, quienes conocen cada pantalla de la red.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal-right">
+            <div class="dif-cta-box">
+              <div class="dif-cta-title">
+                ¿Listo para <br />tu próxima <br /><span
+                  style="color: var(--verde)"
+                  > campaña?</span
+                >
+              </div>
+              <p class="dif-cta-text">
+                Contanos tu objetivo, presupuesto y zona de interés. En menos de
+                24 hs tenés una propuesta a medida con el mejor circuito para tu
+                marca.
+              </p>
+              <a
+                href="#formulario"
+                class="btn-primary"
+                style="align-self: flex-start"
+                >Solicitar propuesta</a
+              >
+              <a
+                class="mediakit-download"
+                href="assets/VMEDIOS MEDIAKIT 2026.pdf"
+                download
+                target="_blank"
+              >
+                <div class="mk-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                    />
+                    <polyline points="14 2 14 8 20 8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <polyline points="10 9 9 9 8 9" />
+                  </svg>
+                </div>
+                <div class="mk-info">
+                  <div class="mk-title">Descargar Media Kit 2026</div>
+                  <div class="mk-sub">PDF · Todos los formatos y tarifas</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
          FOOTER — Logo, copyright y links rápidos
          ============================================================ -->
     <footer>
@@ -1263,7 +1032,7 @@
             />
           </div>
           <div class="footer-copy">
-            © 2026 VMediaos · Todos los derechos reservados
+            © 2026 VMedios · Todos los derechos reservados
           </div>
           <div class="footer-links">
             <a href="#inicio">Inicio</a>
@@ -1293,5 +1062,6 @@
     </a>
 
     <script src="main.js" defer></script>
+    <script>lucide.createIcons();</script>
   </body>
 </html>
