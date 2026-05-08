@@ -21,10 +21,12 @@
     <meta property="og:locale" content="es_AR" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://vmedios.com.ar/assets/op.png" />
+    <link rel="icon" type="image/png" href="assets/logo-white.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@0.511.0/dist/umd/lucide.min.js" defer></script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
     <!-- ============================================================
          NAV — Barra de navegación fija
          ============================================================ -->
@@ -39,8 +41,8 @@
         <li><a href="#venta-alquiler">Venta y Alquiler</a></li>
         <li><a href="#especificaciones">Formatos Alternativos</a></li>
         <li><a href="#galeria">Clientes</a></li>
-        <li><a href="#contacto" class="nav-cta">Consultanos</a></li>
         <li><a href="#diferencial">Diferenciales</a></li>
+        <li><a href="#contacto" class="nav-cta">Consultanos</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -53,13 +55,14 @@
       <a href="#venta-alquiler">Venta y Alquiler</a>
       <a href="#especificaciones">Formatos Alternativos</a>
       <a href="#galeria">Clientes</a>
-      <a href="#contacto">Consultanos</a>
       <a href="#diferencial">Diferenciales</a>
+      <a href="#contacto">Consultanos</a>
     </div>
 
     <!-- ============================================================
          HERO — Sección principal con video y título
          ============================================================ -->
+    <main id="main-content">
     <section id="inicio">
       <div class="hero-bg"></div>
       <div class="hero-grid-lines"></div>
@@ -69,10 +72,10 @@
           muted
           loop
           playsinline
-          preload="auto"
-          fetchpriority="high"
+          preload="metadata"
           disablepictureinpicture
           disableremoteplayback
+          aria-label="Video de pantallas LED en vía pública de VMedios"
         >
           <source src="assets/FINAL.mp4" type="video/mp4" />
         </video>
@@ -312,12 +315,12 @@
     <!-- ============================================================
          NOSOTROS — Quiénes somos, historia y valores
          ============================================================ -->
-    <section id="nosotros">
+    <section id="nosotros" aria-labelledby="h2-nosotros">
       <div class="container">
         <div class="nosotros-grid">
           <div class="nosotros-img reveal-left">
             <div class="nosotros-img-box">
-              <img src="assets/Equipo.png" alt="Equipo VMedios" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              <img src="assets/Equipo.png" alt="Equipo VMedios" loading="lazy" class="nosotros-img-box-img" />
             </div>
             <div class="nosotros-badge">
               <div class="nosotros-badge-num">2013</div>
@@ -326,12 +329,12 @@
           </div>
           <div class="nosotros-content reveal-right">
             <span class="tag">Nosotros</span>
-            <h2 class="section-title">
+            <h2 id="h2-nosotros" class="section-title">
               Más que una empresa,<br /><span class="highlight"
                 >un compromiso</span
               >
             </h2>
-            <p class="nosotros-desc" style="margin-top: 20px">
+            <p class="nosotros-desc nosotros-desc--first">
              Una agencia comercial especializada en publicidad a través de pantallas LED, publicidad exterior tradicional y medios On/OFF, que fue fundada en 2013 por dos profesionales con amplia experiencia que decidieron trabajar de manera efectiva. Más que un simple trabajo, se trata de un compromiso. Establecemos acuerdos comerciales para construir una cartera de espacios que abarquen diversas estrategias de comunicación. Nos apasionan los medios y tomamos muy en serio nuestro compromiso con los clientes..
             </p>
             <p class="nosotros-desc">
@@ -372,12 +375,12 @@
     <!-- ============================================================
          FORMATOS — LA RED MAS COMPLETA Grid de 6 tipos de medios disponibles
          ============================================================ -->
-    <section id="formatos">
+    <section id="formatos" aria-labelledby="h2-formatos">
       <div class="container">
         <div class="formatos-intro">
           <div class="reveal-left">
             <span class="tag">Pantallas LED</span>
-            <h2 class="section-title">
+            <h2 id="h2-formatos" class="section-title">
               Comunidad <br /><span class="highlight">LED</span>
             </h2>
             <p class="formatos-desc">
@@ -391,7 +394,7 @@
             <p class="formatos-desc">
               Agrupamos personas que tienen elementos digitales independientes para poder darles a las marcas las mejores opciones para un circuito digital en todo el país.
             </p>
-            <div class="valor-item" style="margin-top: 24px;">
+            <div class="valor-item valor-item--mt">
               <div class="valor-title">Presencia regional</div>
               <div class="valor-text">Tenemos acuerdos en Uruguay, Paraguay y Perú.</div>
             </div>
@@ -403,50 +406,50 @@
     <!-- ============================================================
          COBERTURA — Mapa de Google Maps + lista de provincias
          ============================================================ -->
-    <section id="cobertura">
+    <section id="cobertura" aria-labelledby="h2-cobertura">
       <div class="container">
         <div class="cobertura-grid">
           <div class="reveal-left">
             <span class="tag">Cobertura</span>
-            <h2 class="section-title">
+            <h2 id="h2-cobertura" class="section-title">
               Presente en <br />todo el <span class="highlight">país</span
               ><br /> y la región
             </h2>
             <div class="cobertura-list">
               <div class="cob-region open">
-                <div class="cob-region-header" onclick="toggleRegion(this)">
+                <button class="cob-region-header" onclick="toggleRegion(this)" aria-expanded="false">
                   <span class="cob-region-name"
                     ><span class="cob-dot"></span>Buenos Aires</span
                   >
-                  <span class="cob-arrow">▼</span>
-                </div>
-                <div class="cob-region-body">
+                  <span class="cob-arrow" aria-hidden="true">▼</span>
+                </button>
+                <div class="cob-region-body" role="region">
                   <div class="cob-cities">
                     CABA · GBA Norte, Oeste y Sur · Mar del Plata · La Plata
                   </div>
                 </div>
               </div>
               <div class="cob-region">
-                <div class="cob-region-header" onclick="toggleRegion(this)">
+                <button class="cob-region-header" onclick="toggleRegion(this)" aria-expanded="false">
                   <span class="cob-region-name"
                     ><span class="cob-dot"></span>Centro y Cuyo</span
                   >
-                  <span class="cob-arrow">▼</span>
-                </div>
-                <div class="cob-region-body">
+                  <span class="cob-arrow" aria-hidden="true">▼</span>
+                </button>
+                <div class="cob-region-body" role="region">
                   <div class="cob-cities">
                     Rosario · Córdoba · Mendoza · Santa Fe · San Juan · San Luis
                   </div>
                 </div>
               </div>
               <div class="cob-region">
-                <div class="cob-region-header" onclick="toggleRegion(this)">
+                <button class="cob-region-header" onclick="toggleRegion(this)" aria-expanded="false">
                   <span class="cob-region-name"
                     ><span class="cob-dot"></span>NOA y NEA</span
                   >
-                  <span class="cob-arrow">▼</span>
-                </div>
-                <div class="cob-region-body">
+                  <span class="cob-arrow" aria-hidden="true">▼</span>
+                </button>
+                <div class="cob-region-body" role="region">
                   <div class="cob-cities">
                     Tucumán · Salta · Jujuy · Catamarca · Chaco · Corrientes ·
                     Paraná
@@ -454,18 +457,18 @@
                 </div>
               </div>
               <div class="cob-region">
-                <div class="cob-region-header" onclick="toggleRegion(this)">
+                <button class="cob-region-header" onclick="toggleRegion(this)" aria-expanded="false">
                   <span class="cob-region-name"
                     ><span class="cob-dot"></span>Regional</span
                   >
-                  <span class="cob-arrow">▼</span>
-                </div>
-                <div class="cob-region-body">
+                  <span class="cob-arrow" aria-hidden="true">▼</span>
+                </button>
+                <div class="cob-region-body" role="region">
                   <div class="cob-cities">Uruguay · Paraguay · Perú</div>
                 </div>
               </div>
             </div>
-            <div class="cobertura-internacional" style="margin-top: 24px">
+            <div class="cobertura-internacional">
               <div class="int-icon">
                 <svg
                   width="20"
@@ -492,7 +495,7 @@
               src="https://www.google.com/maps/d/embed?mid=1PcGEllRV9WMkJ-GMU03z9Pcjfrx_iVU&ehbc=2E312F"
               width="100%"
               height="100%"
-              style="border:0; display:block;"
+              class="cobertura-map-iframe"
               allowfullscreen
               loading="lazy"
             ></iframe>
@@ -533,33 +536,33 @@
     <!-- ============================================================
          ESPECIFICACIONES — Tabs con specs técnicas por formato
          ============================================================ -->
-    <section id="especificaciones">
+    <section id="especificaciones" aria-labelledby="h2-especificaciones">
       <div class="container">
         <div class="specs-intro reveal">
           <span class="tag">Formatos Alternativos</span>
-          <h2 class="section-title">
+          <h2 id="h2-especificaciones" class="section-title">
             Otros <span class="highlight">medios</span>
           </h2>
           <p class="formatos-desc">Para aquellos clientes que no tienen agencia de medios, les ofrecemos la posibilidad de armarles un plan de medios a medida. Una sola negociación, múltiples puntos de contacto con tu audiencia. Te asesoramos en la mejor planificación y compra de medios para la implementación de campañas en publicidad Out Of Home.</p>
         </div>
-        <div class="specs-tabs reveal">
-          <div class="spec-tab active" onclick="switchTab(this, 'tab-medianeras')">Medianeras</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-carteles')">Carteles Gran Formato</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-columnas')">Columnas</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-ruteros')">Ruteros</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-tra')">Luneta Tradicional</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-esc')">Lunetas Escolares</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-luneta-di')">Lunetas Digitales</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-truck')">Truck Publicitario</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-mupi')">Mupis Digitales</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-ppl-back')">PPL Back</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-cine')">Cine</div>
-          <div class="spec-tab" onclick="switchTab(this, 'tab-pnt-tv')">PNT en Radios y TV</div>
+        <div class="specs-tabs reveal" role="tablist" aria-label="Formatos alternativos">
+          <button class="spec-tab active" role="tab" aria-selected="true" aria-controls="tab-medianeras" onclick="switchTab(this, 'tab-medianeras')">Medianeras</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-carteles" onclick="switchTab(this, 'tab-carteles')">Carteles Gran Formato</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-columnas" onclick="switchTab(this, 'tab-columnas')">Columnas</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-ruteros" onclick="switchTab(this, 'tab-ruteros')">Ruteros</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-luneta-tra" onclick="switchTab(this, 'tab-luneta-tra')">Luneta Tradicional</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-luneta-esc" onclick="switchTab(this, 'tab-luneta-esc')">Lunetas Escolares</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-luneta-di" onclick="switchTab(this, 'tab-luneta-di')">Lunetas Digitales</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-truck" onclick="switchTab(this, 'tab-truck')">Truck Publicitario</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-mupi" onclick="switchTab(this, 'tab-mupi')">Mupis Digitales</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-ppl-back" onclick="switchTab(this, 'tab-ppl-back')">PPL Back</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-cine" onclick="switchTab(this, 'tab-cine')">Cine</button>
+          <button class="spec-tab" role="tab" aria-selected="false" aria-controls="tab-pnt-tv" onclick="switchTab(this, 'tab-pnt-tv')">PNT en Radios y TV</button>
         </div>
 
         <div id="tab-medianeras" class="spec-panel active reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/medianera.png" alt="Medianeras" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/medianera.png" alt="Medianeras" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Tipo de soporte</td><td>—</td></tr>
               <tr><td>Dimensiones estándar</td><td>—</td></tr>
@@ -575,7 +578,7 @@
 
         <div id="tab-carteles" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/cartelesGranFormato.png" alt="Carteles Gran Formato" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/cartelesGranFormato.png" alt="Carteles Gran Formato" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Tipo de soporte</td><td>—</td></tr>
               <tr><td>Dimensiones estándar</td><td>—</td></tr>
@@ -591,7 +594,7 @@
 
         <div id="tab-columnas" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/columnas.png" alt="Columnas" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/columnas.png" alt="Columnas" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Altura estándar</td><td>—</td></tr>
               <tr><td>Caras disponibles</td><td>—</td></tr>
@@ -607,7 +610,7 @@
 
         <div id="tab-ruteros" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/ruteros.png" alt="Ruteros" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/ruteros.png" alt="Ruteros" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Formato de archivo</td><td><span class="spec-badge">MP4</span><span class="spec-badge">AVI</span><span class="spec-badge">MOV</span></td></tr>
               <tr><td>Resolución mínima</td><td>Consultar según pantalla (varía por ubicación)</td></tr>
@@ -623,7 +626,7 @@
 
         <div id="tab-luneta-tra" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/luneta-tradicional.png" alt="Luneta Tradicional" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/luneta-tradicional.png" alt="Luneta Tradicional" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Soporte</td><td>Vinilo autoadhesivo calidad exterior</td></tr>
               <tr><td>Formato de entrega</td><td>PDF / AI / PSD — alta resolución</td></tr>
@@ -637,7 +640,7 @@
 
         <div id="tab-luneta-esc" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/luneta-escolar.png" alt="Lunetas Escolares" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/luneta-escolar.png" alt="Lunetas Escolares" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Soporte</td><td>—</td></tr>
               <tr><td>Formato de entrega</td><td>—</td></tr>
@@ -651,7 +654,7 @@
 
         <div id="tab-luneta-di" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/luneta-led.png" alt="Lunetas Digitales" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/luneta-led.png" alt="Lunetas Digitales" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Formato de archivo</td><td><span class="spec-badge">MP4</span> Sin audio</td></tr>
               <tr><td>Resolución</td><td>1560 × 468 px</td></tr>
@@ -667,7 +670,7 @@
 
         <div id="tab-truck" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/truck-publicitario.png" alt="Truck Publicitario" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/truck-publicitario.png" alt="Truck Publicitario" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Tipo</td><td>—</td></tr>
               <tr><td>Formato de archivo</td><td>—</td></tr>
@@ -680,7 +683,7 @@
 
         <div id="tab-mupi" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/mupis-digitales.png" alt="Mupis Digitales" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/mupis-digitales.png" alt="Mupis Digitales" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Formato de archivo</td><td><span class="spec-badge">JPG</span><span class="spec-badge">MP4</span></td></tr>
               <tr><td>Resolución opción A</td><td>320 × 512 px</td></tr>
@@ -694,7 +697,7 @@
 
         <div id="tab-ppl-back" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/ppl-black.png" alt="PPL Back" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/ppl-black.png" alt="PPL Back" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Tipo de soporte</td><td>—</td></tr>
               <tr><td>Formato de entrega</td><td>—</td></tr>
@@ -707,7 +710,7 @@
 
         <div id="tab-cine" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/cine.png" alt="Cine" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/cine.png" alt="Cine" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Formato de archivo</td><td>—</td></tr>
               <tr><td>Resolución mínima</td><td>—</td></tr>
@@ -720,7 +723,7 @@
 
         <div id="tab-pnt-tv" class="spec-panel reveal">
           <div class="spec-panel-inner">
-            <div class="spec-img"><img src="assets/otros-medios/pnt-radio-tv.png" alt="PNT en Radios y TV" /></div>
+            <div class="spec-img"><img src="assets/otros-medios/pnt-radio-tv.png" alt="PNT en Radios y TV" loading="lazy" /></div>
             <table class="spec-table">
               <tr><td>Formato de archivo</td><td>—</td></tr>
               <tr><td>Duración del spot</td><td>—</td></tr>
@@ -740,12 +743,12 @@
     <!-- ============================================================
          CONTACTO — Datos de contacto + formulario de consulta
          ============================================================ -->
-    <section id="contacto">
+    <section id="contacto" aria-labelledby="h2-contacto">
       <div class="container">
         <div class="contacto-grid">
           <div class="reveal-left">
             <span class="tag">Contacto</span>
-            <h2 class="section-title">
+            <h2 id="h2-contacto" class="section-title">
               Hablemos <br />de tu <span class="highlight">campaña</span>
             </h2>
             <p class="contacto-intro">
@@ -907,12 +910,12 @@
     <!-- ============================================================
          DIFERENCIAL — Por qué VMediaos, 4 puntos + CTA y media kit
          ============================================================ -->
-    <section id="diferencial">
+    <section id="diferencial" aria-labelledby="h2-diferencial">
       <div class="container">
         <div class="dif-grid">
           <div class="reveal-left">
             <span class="tag">Nuestros diferenciales</span>
-            <h2 class="section-title" style="margin-bottom: 40px">
+            <h2 id="h2-diferencial" class="section-title section-title--lg-mb">
               Por qué <br /><span class="highlight">VMedios</span>
             </h2>
             <div class="dif-list">
@@ -968,7 +971,7 @@
             <div class="dif-cta-box">
               <div class="dif-cta-title">
                 ¿Listo para <br />tu próxima <br /><span
-                  style="color: var(--verde)"
+                  class="highlight"
                   > campaña?</span
                 >
               </div>
@@ -979,9 +982,8 @@
               </p>
               <a
                 href="#formulario"
-                class="btn-primary"
-                style="align-self: flex-start"
-                >Solicitar propuesta</a
+                class="btn-primary btn-primary--self-start"
+                >Solicitar propuesta</
               >
               <a
                 class="mediakit-download"
@@ -1018,6 +1020,7 @@
       </div>
     </section>
 
+    </main>
     <!-- ============================================================
          FOOTER — Logo, copyright y links rápidos
          ============================================================ -->

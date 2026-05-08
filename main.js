@@ -69,17 +69,31 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
   });
 });
 
+// ===== SPEC PANELS ARIA =====
+document.querySelectorAll('.spec-panel').forEach(panel => {
+  panel.setAttribute('role', 'tabpanel');
+  panel.setAttribute('tabindex', '0');
+  const tab = document.querySelector(`[aria-controls="${panel.id}"]`);
+  if (tab) panel.setAttribute('aria-labelledby', tab.id || '');
+});
+
 // ===== SPEC TABS =====
 function switchTab(tab, panelId) {
-  document.querySelectorAll('.spec-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.spec-tab').forEach(t => {
+    t.classList.remove('active');
+    t.setAttribute('aria-selected', 'false');
+  });
   document.querySelectorAll('.spec-panel').forEach(p => p.classList.remove('active'));
   tab.classList.add('active');
+  tab.setAttribute('aria-selected', 'true');
   document.getElementById(panelId).classList.add('active');
 }
 
 // ===== COBERTURA ACCORDION =====
 function toggleRegion(header) {
-  header.parentElement.classList.toggle('open');
+  const region = header.parentElement;
+  region.classList.toggle('open');
+  header.setAttribute('aria-expanded', region.classList.contains('open'));
 }
 
 // ===== FORM SUBMIT =====
